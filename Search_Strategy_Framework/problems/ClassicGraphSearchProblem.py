@@ -6,6 +6,7 @@ from problems.Problem import Problem
 class ClassicGraphSearchProblem(Problem):
     initial_state = 0
     final_state = 5
+    number_of_states = 8
     neighbors = [
         [1, 6],
         [0, 2],

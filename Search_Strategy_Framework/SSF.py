@@ -1,7 +1,8 @@
 
-class SSF():
+class SSF:
+    
     def SolveUninformed(self, problem, strategy):
-        pass
+        return strategy.run(problem)
 
     def SolveInformed(self,problem,strategy, scoreFunction):
         pass

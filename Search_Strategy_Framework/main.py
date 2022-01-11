@@ -1,3 +1,4 @@
+from SSF import SSF
 from problems.ClassicGraphSearchProblem import ClassicGraphSearchProblem
 from strategies.uninformed.BDS import BDS
 from strategies.uninformed.BFS import BFS
@@ -10,4 +11,5 @@ from strategies.uninformed.UCS import UCS
 problem = ClassicGraphSearchProblem()
 number = 0
 bk = IDS()
-print(bk.run(problem))
+framework = SSF()
+print(framework.SolveUninformed(problem, bk))

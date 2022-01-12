@@ -11,8 +11,47 @@ from strategies.uninformed.UCS import UCS
 from strategies.informed.AStar import A_Star
 from strategies.informed.GBF import GBF
 
-problem = Grid()
-number = 0
-bk = GBF()
+problem = ClassicGraphSearchProblem()
+
+print("Rezultat BFS")
+method = BFS()
 framework = SSF()
-print(framework.SolveUninformed(problem, bk))
+print(framework.SolveUninformed(problem, method))
+
+print("Rezultat DFS")
+method = DFS()
+framework = SSF()
+print(framework.SolveUninformed(problem, method))
+
+print("Rezultat IDS")
+method = IDS()
+framework = SSF()
+print(framework.SolveUninformed(problem, method))
+
+print("Rezultat UCS")
+method = UCS()
+framework = SSF()
+print(framework.SolveUninformed(problem, method))
+
+print("Rezultat Random")
+method = Random()
+framework = SSF()
+print(framework.SolveUninformed(problem, method))
+
+print("Rezultat Backtracking")
+method = Backtracking()
+framework = SSF()
+print(framework.SolveUninformed(problem, method))
+
+print("Rezultat BDS")
+method = BDS()
+framework = SSF()
+print(framework.SolveUninformed(problem, method))
+
+
+#Problemele de tip informed nu functioneaza GBF/A*
+#print("Rezultat GBF")
+#problem = GridProblem()
+#method = GBF()
+#framework = SSF()
+#print(framework.SolveInformed(problem, method))

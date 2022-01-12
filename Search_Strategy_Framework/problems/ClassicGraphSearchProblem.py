@@ -35,4 +35,3 @@ class ClassicGraphSearchProblem(Problem):
 
     def GetCost(self,state1,state2):
         return self.costarray[state1][state2]
-
